@@ -81,7 +81,7 @@ $(function(){
 
 //   By using the on() we can use multiple events at once
 
-$("#link").on({
+  $("#link").on({
     mouseenter: function(){
         $(this).css("background-color", "lightgray");
       },
@@ -94,9 +94,62 @@ $("#link").on({
       dblclick: function(){
         $(this).hide()
       }
-})
+    })
 
-// Add more down the road
+    // Add more down the road
+    $("#hide-show #hide").click(function(){
+      // $(selector).hide(speed, callback)
+      $("p").hide(500) 
+    })
+
+    $("#hide-show #show").click(function(){
+      $("#hide-show p").show(500)
+    })
+
+    $("#toggle").click(function(){
+      $("#toggle p").toggle("slow")
+    })
+
+    $("#fade").click(function(){
+      $("#div1").fadeIn()
+      $("#div2").fadeIn("slow")
+      $("#div3").fadeIn(3000)
+    })
+
+
+    $("#fadeout").click(function(){
+      $("#div11").fadeOut()
+      $("#div22").fadeOut("slow")
+      $("#div33").fadeOut(3000)
+    })
+
+    $("#fadeToggle").click(function(){
+      $("#div111").fadeToggle()
+      $("#div222").fadeToggle("slow")
+      $("#div333").fadeToggle(3000)
+    })
+
+    // Jquery Slide, slideDown() slideUp() slideToggle()
+    $("#flip").click(function(){
+      $("#panel").slideToggle(1000)
+    })
+
+    // Animate method
+    // $("#animate").click(function(){
+    //   $(this).animate({left: "10%"}, 1000)
+    // })
+
+    $("#animate").click(function(){
+      $(this).animate({
+        left: "10%",
+        opacity: '0.5',
+        height: '300px',
+        width : '300px'
+      }, 1000)
+    })
+
+
+    
 
 });
 

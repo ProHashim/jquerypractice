@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <p id="top">Hola</p>
@@ -23,6 +25,92 @@
     />
 
     <a href="#" id="link">I am a link</a>
+
+    <div id="hide-show">
+      <h3>
+        Jquery click on hide to hide and vice versa <br />
+        <span id="hide"> hide() </span> & <span id="show">show() </span>
+      </h3>
+      <p>I will hide with the click</p>
+    </div>
+
+    <div>
+      <h3>The .toggle()</h3>
+
+      <div id="toggle">
+        Click to toggle
+        <p>This is a paragraph with little content.</p>
+        <p>This is a paragraph with little content.</p>
+      </div>
+    </div>
+
+    <button id="fade">Click to fade in boxes</button><br /><br />
+
+    <div
+      id="div1"
+      style="width: 80px; height: 80px; display: none; background-color: red"
+    ></div>
+    <br />
+    <div
+      id="div2"
+      style="width: 80px; height: 80px; display: none; background-color: green"
+    ></div>
+    <br />
+    <div
+      id="div3"
+      style="width: 80px; height: 80px; display: none; background-color: blue"
+    ></div>
+
+    <button id="fadeout">Click to fade out boxes</button><br /><br />
+
+    <div
+      id="div11"
+      style="width: 80px; height: 80px; background-color: red"
+    ></div>
+    <br />
+    <div
+      id="div22"
+      style="width: 80px; height: 80px; background-color: green"
+    ></div>
+    <br />
+    <div
+      id="div33"
+      style="width: 80px; height: 80px; background-color: blue"
+    ></div>
+
+    <p>Demonstrate fadeToggle() with different speed parameters.</p>
+
+    <button id="fadeToggle">Click to fade in/out boxes</button><br /><br />
+
+    <div
+      id="div111"
+      style="width: 80px; height: 80px; background-color: red"
+    ></div>
+    <br />
+    <div
+      id="div222"
+      style="width: 80px; height: 80px; background-color: green"
+    ></div>
+    <br />
+    <div
+      id="div333"
+      style="width: 80px; height: 80px; background-color: blue"
+    ></div>
+
+    <div id="flip">Click to slide the panel down or up</div>
+    <div id="panel">Hello world!</div>
+
+    <h3>A div to be animated</h3>
+    <div
+      style="
+        background: #98bf21;
+        height: 100px;
+        width: 100px;
+        position: absolute;
+      "
+      id="animate"
+    ></div>
+
     <script src="/jquery/dist/jquery.min.js"></script>
     <script src="jqueryFunction.js"></script>
   </body>
