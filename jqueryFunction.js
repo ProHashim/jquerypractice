@@ -149,6 +149,29 @@ $(function(){
     })
 
 
+    // stop() method is used to stop an animation
+    // $("selector").stop()
+
+  // Jquery Callbacks
+  // A callback function is executed after the current statement is finished 100%
+
+  /*
+  JavaScript statements are executed line by line. However, with effects, the next line of code can be run even though the effect is not finished. This can create errors.
+
+  To prevent this, you can create a callback function.
+
+  A callback function is executed after the current effect is finished.
+
+  Typical syntax: $(selector).hide(speed,callback); */
+
+  $("#coolbutton").click(function(){
+    $("#hidden").hide("slow", function(){
+      console.log("call backsssssssssssssssssssss!")
+    })
+  })
+
+
+
     
 
 });
