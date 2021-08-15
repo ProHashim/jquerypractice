@@ -170,8 +170,12 @@ $(function(){
     })
   })
 
+  // We can multiple methods in jquery 
 
 
+$("#chaining").click(function(){
+  $(this).css("color", "burlywood").slideUp("slow").slideDown(2000)
+})
     
 
 });
