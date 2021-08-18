@@ -1,0 +1,15 @@
+.ui-state-active{
+    background-color: bisque;
+}
+#sortable li:nth-child(even){
+    background-color: aqua;
+    width: 400px;
+    margin-bottom: 10px;
+}
+#sortable li:nth-child(odd){
+    background-color:#777;
+    width: 400px;
+    margin-bottom: 10px;
+}
+
+.ui-menu { width: 150px; }
